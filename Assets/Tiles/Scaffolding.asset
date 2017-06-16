@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed36f5f3c8e5dd144a95680d816ebe89, type: 3}
+  m_Name: Scaffolding
+  m_EditorClassIdentifier: 
+  sprites:
+  - sprite: {fileID: 21300206, guid: 0aba61277c92efc488fb967cd0af8505, type: 3}
+    probability: 5
+  - sprite: {fileID: 21300208, guid: 0aba61277c92efc488fb967cd0af8505, type: 3}
+    probability: 4
+  - sprite: {fileID: 21300210, guid: 0aba61277c92efc488fb967cd0af8505, type: 3}
+    probability: 6
+  perlinInputScale: 1
+  perlinOutputScale: 15

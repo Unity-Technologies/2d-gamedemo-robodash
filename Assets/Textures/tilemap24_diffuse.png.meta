@@ -1,0 +1,1449 @@
+fileFormatVersion: 2
+guid: 0aba61277c92efc488fb967cd0af8505
+timeCreated: 1485441590
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tilemap24_0
+    21300002: tilemap24_1
+    21300004: tilemap24_2
+    21300006: tilemap24_3
+    21300008: tilemap24_4
+    21300010: tilemap24_5
+    21300012: tilemap24_6
+    21300014: tilemap24_7
+    21300016: tilemap24_8
+    21300018: tilemap24_9
+    21300020: tilemap24_10
+    21300022: tilemap24_11
+    21300024: tilemap24_12
+    21300026: tilemap24_13
+    21300028: prop_crate1
+    21300030: player_idle_0
+    21300032: player_idle_1
+    21300034: player_walk0
+    21300036: player_walk1
+    21300038: player_walk2
+    21300040: player_walk3
+    21300042: player_walk4
+    21300044: player_walk5
+    21300046: player_walk6
+    21300048: prop_barrel1
+    21300050: prop_crate2
+    21300052: orangetile_0
+    21300054: orangetile_1
+    21300056: orangetile_2
+    21300058: orangetile_3
+    21300060: orangetile_4
+    21300062: orangetile_5
+    21300064: orangetile_6
+    21300066: orangetile_7
+    21300068: orangetile_8
+    21300070: orangetile_11
+    21300072: orangetile_9
+    21300074: orangetile_10
+    21300076: orangetile_12
+    21300078: orangetile_13
+    21300080: lasertower_0
+    21300082: lasertower_1
+    21300084: lasertower_2
+    21300086: lasertower_3
+    21300088: lasertower_4
+    21300090: deathbit_head
+    21300092: deathbit_arm1
+    21300094: deathbit_arm2
+    21300096: deathbit_leg1
+    21300098: deathbit_leg2
+    21300100: yellowturret_left
+    21300102: yellowturret_front
+    21300104: yellowturret_right
+    21300106: yellowturret_back
+    21300108: rail_4cross
+    21300110: rail_vertical
+    21300112: rail_horizontal
+    21300114: rail_turn_se
+    21300116: rail_turn_sw
+    21300118: rail_turn_nw
+    21300120: rail_turn_ne
+    21300122: rail_end_n
+    21300124: rail_end_s
+    21300126: rail_end_e
+    21300128: rail_end_w
+    21300130: rail_3cross_e
+    21300132: rail_3cross_s
+    21300134: rail_3cross_w
+    21300136: rail_3cross_n
+    21300138: orangetile_7a
+    21300140: orangetile_7b
+    21300142: orangetile_7c
+    21300144: orangetile_7d
+    21300146: orangetile_13a
+    21300148: orangetile_13b
+    21300150: orangetile_13c
+    21300152: portal_blue0
+    21300154: portal_orange0
+    21300156: portal_blue1
+    21300158: bombbot_medium
+    21300160: bombbot_small
+    21300162: bombbot_large
+    21300164: purpleturret_left
+    21300166: purpleturret_front
+    21300168: purpleturret_right
+    21300170: purpleturret_back
+    21300172: lock_block
+    21300174: key
+    21300176: goal
+    21300178: start
+    21300180: lock_open0
+    21300182: lock_open1
+    21300184: lock_open2
+    21300186: blob_shadow
+    21300188: orangetile_7e
+    21300190: orangetile_7f
+    21300192: orangetile_7g
+    21300194: orangetile_7h
+    21300196: orangetile_13d
+    21300198: orangetile_13e
+    21300200: orangetile_13f
+    21300202: orangetile_13g
+    21300204: orangetile_13h
+    21300206: scaffolding_0
+    21300208: scaffolding_1
+    21300210: scaffolding_2
+    21300212: lamp_post
+    21300214: lamp_halo
+    21300216: scifi_box
+    21300218: scifi_barrel
+    21300220: scifi_panel
+    21300222: scifi_panel_hologram
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 24
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: player_idle_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 895
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.45751476, y: 0.2793293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_idle_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 899
+        width: 22
+        height: 27
+      alignment: 9
+      pivot: {x: 0.36250445, y: 0.18689643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_walk0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 867
+        width: 29
+        height: 26
+      alignment: 9
+      pivot: {x: 0.38055947, y: 0.19253305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_walk2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 867
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.40447798, y: 0.15948105}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: player_walk4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 866
+        width: 16
+        height: 27
+      alignment: 9
+      pivot: {x: 0.32347202, y: 0.22738308}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 976
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 976
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 976
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 952
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 952
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 952
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 928
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 928
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_8
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 928
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_11
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 928
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 976
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_10
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 976
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_12
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 928
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 880
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lasertower_0
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 976
+        width: 30
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lasertower_1
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 976
+        width: 30
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lasertower_2
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 976
+        width: 30
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lasertower_3
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 976
+        width: 30
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lasertower_4
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 976
+        width: 30
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deathbit_head
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 916
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deathbit_arm1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 910
+        width: 3
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deathbit_arm2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 910
+        width: 3
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deathbit_leg1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 904
+        width: 3
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deathbit_leg2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 904
+        width: 3
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellowturret_left
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 928
+        width: 26
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5776367, y: 0.0000025431316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellowturret_front
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 928
+        width: 22
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellowturret_right
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 928
+        width: 26
+        height: 29
+      alignment: 9
+      pivot: {x: 0.42604887, y: 0.0025024414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: yellowturret_back
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 928
+        width: 22
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_4cross
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 772
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_vertical
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 772
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_horizontal
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 772
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_turn_se
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 772
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_turn_sw
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 772
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_turn_nw
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 748
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_turn_ne
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 748
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_end_n
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 772
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_end_s
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 748
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_end_e
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 724
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_end_w
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 724
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_3cross_e
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 748
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_3cross_s
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 724
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_3cross_w
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 724
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rail_3cross_n
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 748
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7a
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 832
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7b
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 832
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7c
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 832
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7d
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 832
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13a
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 880
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13b
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 848
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13c
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 848
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: portal_blue0
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 905
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.43759722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: portal_orange0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 905
+        width: 24
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bombbot_medium
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 853
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bombbot_small
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 862
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bombbot_large
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 847
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: purpleturret_left
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 892
+        width: 12
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: purpleturret_front
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 892
+        width: 12
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: purpleturret_right
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 892
+        width: 12
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: purpleturret_back
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 892
+        width: 12
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lock_block
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 892
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: key
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 893
+        width: 21
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5239316, y: 0.5239316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: goal
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 832
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: start
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 832
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lock_open0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 864
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lock_open1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 864
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lock_open2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 864
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blob_shadow
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 900
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7e
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 784
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7f
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 784
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7g
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 784
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_7h
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 784
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13d
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 820
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13e
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 820
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13f
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 820
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13g
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 820
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: orangetile_13h
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 848
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: scaffolding_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 964
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: scaffolding_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 964
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: scaffolding_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 964
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lamp_post
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 951
+        width: 12
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1130513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lamp_halo
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 949
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: scifi_box
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 966
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: scifi_barrel
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 964
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: scifi_panel
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 964
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: scifi_panel_hologram
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 986
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
