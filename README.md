@@ -1,0 +1,5 @@
+# 2d-gamedemo-robodash
+  
+The RoboDash game demo project was a prototyping experiment to test workflow and also create an example of using Brushes and Tiles in a development scenario. We had one developer work with an external game artist for a few weeks to create the prototype with a primary goal of using brushes and tiles setup to make level building for artists and designers faster and more fun! It is now made available for use with Unity 2017.2b02 (and in the experimental 2D builds).
+
+An important thing to note - This demo project was developed as a fast prototype, so the game-play code itself is not optimized, it contains some not so good practices and was only used as a base game. With the base game, we could start creating a setup, where a developer would create Brushes and Tiles for a level artist or designer to quickly create game levels. That said, the Brushes and Tiles are the actual examples to learn from - the rest of the demo project should be looked at with caution.
