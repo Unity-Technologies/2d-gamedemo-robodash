@@ -1,1 +1,1 @@
-m_EditorVersion: 2017.1.0x2-2D-Build
+m_EditorVersion: 2017.2.0b2
