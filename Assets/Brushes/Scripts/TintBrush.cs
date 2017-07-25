@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-[CustomGridBrush(true, false, false, "Tint")]
 public class TintBrush : GridBrushBase
 {
 	public Color m_Color = Color.black;
