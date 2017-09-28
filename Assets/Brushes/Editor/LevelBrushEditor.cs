@@ -35,35 +35,14 @@ public class LevelBrushEditor : GridBrushEditorBase
 
 	public override void OnPaintSceneGUI(GridLayout grid, GameObject layer, BoundsInt position, GridBrushBase.Tool tool, bool executing)
 	{
-		Tilemap floor = LevelBrush.GetFloor();
-		Tilemap walls = LevelBrush.GetWall();
-
-		if (floor != null && walls != null)
+		LevelBrush.InitializeLevelCacheIfNecessary();
+		var invalidFloors = LevelBrush.GetAllInvalidFloors();
+		BrushEditorUtility.BeginQuads(new Color(1f, 0f, 0f, 0.5f));
+		foreach (var pos in invalidFloors)
 		{
-			LevelBrush.InitializeLevelCacheIfNecessary();
-			HashSet<Vector3Int> level = LevelBrush.GetAllFloors();
-			
-			BrushEditorUtility.BeginQuads(new Color(1f, 0f, 0f, 0.5f));
-			foreach (Vector3Int pos in LevelBrush.GetLevelBounds().allPositionsWithin)
-			{
-				if (walls.GetTile(pos) != null)
-				{
-					int mask = 0;
-					if (!level.Contains(pos + Vector3Int.up))
-						mask += 1;
-					if (!level.Contains(pos + Vector3Int.right))
-						mask += 2;
-					if (!level.Contains(pos + Vector3Int.down))
-						mask += 4;
-					if (!level.Contains(pos + Vector3Int.left))
-						mask += 8;
-
-					if (mask == 5 || mask == 10 || mask == 1 || mask == 2 || mask == 4 || mask == 8 || mask == 0)
-						BrushEditorUtility.DrawQuadBatched(grid, pos);
-				}
-			}
-			BrushEditorUtility.EndQuads();
+			BrushEditorUtility.DrawQuadBatched(grid, pos);
 		}
+		BrushEditorUtility.EndQuads();
 
 		base.OnPaintSceneGUI(grid, layer, position, tool, executing);
 	}

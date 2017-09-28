@@ -16,6 +16,7 @@ public class LevelBrush : GridBrushBase
 
 	[NonSerialized]
 	private static HashSet<Vector3Int> s_LevelCache;
+	private static HashSet<Vector3Int> s_InvalidLevelCache;
 	private static BoundsInt? s_LevelBoundsCache;
 
 	public override void Paint(GridLayout grid, GameObject layer, Vector3Int position)
@@ -94,6 +95,8 @@ public class LevelBrush : GridBrushBase
 		{
 			s_LevelCache.Clear();
 			s_LevelCache = null;
+			s_InvalidLevelCache.Clear();
+			s_InvalidLevelCache = null;
 			s_LevelBoundsCache = null;
 		}
 		InitializeLevelCacheIfNecessary();
@@ -104,6 +107,7 @@ public class LevelBrush : GridBrushBase
 		if (s_LevelCache == null)
 		{
 			s_LevelCache = new HashSet<Vector3Int>();
+			s_InvalidLevelCache = new HashSet<Vector3Int>();
 			Tilemap wall = GetWall();
 			Tilemap floor = GetFloor();
 			if (wall != null && floor != null)
@@ -113,6 +117,13 @@ public class LevelBrush : GridBrushBase
 					if (wall.GetTile(pos) == null && floor.GetTile(pos) != null)
 					{
 						s_LevelCache.Add(pos);
+					}
+				}
+				foreach (var pos in wall.cellBounds.allPositionsWithin)
+				{
+					if (IsInvalidFloor(pos, wall))
+					{
+						s_InvalidLevelCache.Add(pos);
 					}
 				}
 			}
@@ -131,6 +142,18 @@ public class LevelBrush : GridBrushBase
 			{
 				s_LevelCache.Remove(position);
 			}
+			var bounds = new BoundsInt(position.x - 1, position.y - 1, position.z, 3, 3, 1);
+			foreach (var pos in bounds.allPositionsWithin)
+			{
+				if (IsInvalidFloor(pos, walls))
+				{
+					s_InvalidLevelCache.Add(pos);
+				}
+				else
+				{
+					s_InvalidLevelCache.Remove(pos);
+				}
+			}
 			if (!GetLevelBounds().Contains(position))
 				s_LevelBoundsCache = null;
 		}
@@ -141,6 +164,11 @@ public class LevelBrush : GridBrushBase
 		return s_LevelCache;
 	}
 
+	public static HashSet<Vector3Int> GetAllInvalidFloors()
+	{
+		return s_InvalidLevelCache;
+	}
+	
 	public static BoundsInt GetLevelBounds()
 	{
 		if (!s_LevelBoundsCache.HasValue)
@@ -160,6 +188,31 @@ public class LevelBrush : GridBrushBase
 	public static bool IsFloor(Vector3Int position, Tilemap walls, Tilemap floor)
 	{
 		return floor.GetTile(position) != null && walls.GetTile(position) == null;
+	}
+
+	public static bool IsInvalidFloorFast(Vector3Int position)
+	{
+		return s_InvalidLevelCache.Contains(position);
+	}
+	
+	public static bool IsInvalidFloor(Vector3Int position, Tilemap walls)
+	{
+		if (walls != null && walls.GetTile(position) != null)
+		{
+			int mask = 0;
+			if (!s_LevelCache.Contains(position + Vector3Int.up))
+				mask += 1;
+			if (!s_LevelCache.Contains(position + Vector3Int.right))
+				mask += 2;
+			if (!s_LevelCache.Contains(position + Vector3Int.down))
+				mask += 4;
+			if (!s_LevelCache.Contains(position + Vector3Int.left))
+				mask += 8;
+
+			if (mask == 5 || mask == 10 || mask == 1 || mask == 2 || mask == 4 || mask == 8 || mask == 0)
+				return true;	
+		}
+		return false;
 	}
 
 	public static Tilemap GetWall()

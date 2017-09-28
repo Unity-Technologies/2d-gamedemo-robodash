@@ -50,7 +50,7 @@ public class TintTextureGenerator : MonoBehaviour
 		if (!BeginUpdate())
 			return;
 
-		BoundsInt extruded = new BoundsInt(position.min + new Vector3Int(-2, -2, 0), position.size + new Vector3Int(5, 5, 0));
+		BoundsInt extruded = new BoundsInt(position.min + new Vector3Int(-2, -2, 0), position.size + new Vector3Int(4, 4, 0));
 		
 		foreach (var cell in extruded.allPositionsWithin)
 		{
@@ -90,7 +90,7 @@ public class TintTextureGenerator : MonoBehaviour
 		int result = int.MaxValue;
 		foreach (var pos in new BoundsInt(position + new Vector3Int(-2, -2, 0), new Vector3Int(5, 5, 1)).allPositionsWithin)
 		{
-			if (LevelBrush.IsFloorFast(pos))
+			if (LevelBrush.IsFloorFast(pos))//, wall, floor))
 			{
 				result = Mathf.Min((pos - position).sqrMagnitude, result);
 			}
