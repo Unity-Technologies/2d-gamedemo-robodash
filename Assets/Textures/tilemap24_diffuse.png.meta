@@ -1,122 +1,345 @@
 fileFormatVersion: 2
 guid: 0aba61277c92efc488fb967cd0af8505
-timeCreated: 1485441590
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: tilemap24_0
-    21300002: tilemap24_1
-    21300004: tilemap24_2
-    21300006: tilemap24_3
-    21300008: tilemap24_4
-    21300010: tilemap24_5
-    21300012: tilemap24_6
-    21300014: tilemap24_7
-    21300016: tilemap24_8
-    21300018: tilemap24_9
-    21300020: tilemap24_10
-    21300022: tilemap24_11
-    21300024: tilemap24_12
-    21300026: tilemap24_13
-    21300028: prop_crate1
-    21300030: player_idle_0
-    21300032: player_idle_1
-    21300034: player_walk0
-    21300036: player_walk1
-    21300038: player_walk2
-    21300040: player_walk3
-    21300042: player_walk4
-    21300044: player_walk5
-    21300046: player_walk6
-    21300048: prop_barrel1
-    21300050: prop_crate2
-    21300052: orangetile_0
-    21300054: orangetile_1
-    21300056: orangetile_2
-    21300058: orangetile_3
-    21300060: orangetile_4
-    21300062: orangetile_5
-    21300064: orangetile_6
-    21300066: orangetile_7
-    21300068: orangetile_8
-    21300070: orangetile_11
-    21300072: orangetile_9
-    21300074: orangetile_10
-    21300076: orangetile_12
-    21300078: orangetile_13
-    21300080: lasertower_0
-    21300082: lasertower_1
-    21300084: lasertower_2
-    21300086: lasertower_3
-    21300088: lasertower_4
-    21300090: deathbit_head
-    21300092: deathbit_arm1
-    21300094: deathbit_arm2
-    21300096: deathbit_leg1
-    21300098: deathbit_leg2
-    21300100: yellowturret_left
-    21300102: yellowturret_front
-    21300104: yellowturret_right
-    21300106: yellowturret_back
-    21300108: rail_4cross
-    21300110: rail_vertical
-    21300112: rail_horizontal
-    21300114: rail_turn_se
-    21300116: rail_turn_sw
-    21300118: rail_turn_nw
-    21300120: rail_turn_ne
-    21300122: rail_end_n
-    21300124: rail_end_s
-    21300126: rail_end_e
-    21300128: rail_end_w
-    21300130: rail_3cross_e
-    21300132: rail_3cross_s
-    21300134: rail_3cross_w
-    21300136: rail_3cross_n
-    21300138: orangetile_7a
-    21300140: orangetile_7b
-    21300142: orangetile_7c
-    21300144: orangetile_7d
-    21300146: orangetile_13a
-    21300148: orangetile_13b
-    21300150: orangetile_13c
-    21300152: portal_blue0
-    21300154: portal_orange0
-    21300156: portal_blue1
-    21300158: bombbot_medium
-    21300160: bombbot_small
-    21300162: bombbot_large
-    21300164: purpleturret_left
-    21300166: purpleturret_front
-    21300168: purpleturret_right
-    21300170: purpleturret_back
-    21300172: lock_block
-    21300174: key
-    21300176: goal
-    21300178: start
-    21300180: lock_open0
-    21300182: lock_open1
-    21300184: lock_open2
-    21300186: blob_shadow
-    21300188: orangetile_7e
-    21300190: orangetile_7f
-    21300192: orangetile_7g
-    21300194: orangetile_7h
-    21300196: orangetile_13d
-    21300198: orangetile_13e
-    21300200: orangetile_13f
-    21300202: orangetile_13g
-    21300204: orangetile_13h
-    21300206: scaffolding_0
-    21300208: scaffolding_1
-    21300210: scaffolding_2
-    21300212: lamp_post
-    21300214: lamp_halo
-    21300216: scifi_box
-    21300218: scifi_barrel
-    21300220: scifi_panel
-    21300222: scifi_panel_hologram
-  serializedVersion: 4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: tilemap24_0
+  - first:
+      213: 21300002
+    second: tilemap24_1
+  - first:
+      213: 21300004
+    second: tilemap24_2
+  - first:
+      213: 21300006
+    second: tilemap24_3
+  - first:
+      213: 21300008
+    second: tilemap24_4
+  - first:
+      213: 21300010
+    second: tilemap24_5
+  - first:
+      213: 21300012
+    second: tilemap24_6
+  - first:
+      213: 21300014
+    second: tilemap24_7
+  - first:
+      213: 21300016
+    second: tilemap24_8
+  - first:
+      213: 21300018
+    second: tilemap24_9
+  - first:
+      213: 21300020
+    second: tilemap24_10
+  - first:
+      213: 21300022
+    second: tilemap24_11
+  - first:
+      213: 21300024
+    second: tilemap24_12
+  - first:
+      213: 21300026
+    second: tilemap24_13
+  - first:
+      213: 21300028
+    second: prop_crate1
+  - first:
+      213: 21300030
+    second: player_idle_0
+  - first:
+      213: 21300032
+    second: player_idle_1
+  - first:
+      213: 21300034
+    second: player_walk0
+  - first:
+      213: 21300036
+    second: player_walk1
+  - first:
+      213: 21300038
+    second: player_walk2
+  - first:
+      213: 21300040
+    second: player_walk3
+  - first:
+      213: 21300042
+    second: player_walk4
+  - first:
+      213: 21300044
+    second: player_walk5
+  - first:
+      213: 21300046
+    second: player_walk6
+  - first:
+      213: 21300048
+    second: prop_barrel1
+  - first:
+      213: 21300050
+    second: prop_crate2
+  - first:
+      213: 21300052
+    second: orangetile_0
+  - first:
+      213: 21300054
+    second: orangetile_1
+  - first:
+      213: 21300056
+    second: orangetile_2
+  - first:
+      213: 21300058
+    second: orangetile_3
+  - first:
+      213: 21300060
+    second: orangetile_4
+  - first:
+      213: 21300062
+    second: orangetile_5
+  - first:
+      213: 21300064
+    second: orangetile_6
+  - first:
+      213: 21300066
+    second: orangetile_7
+  - first:
+      213: 21300068
+    second: orangetile_8
+  - first:
+      213: 21300070
+    second: orangetile_11
+  - first:
+      213: 21300072
+    second: orangetile_9
+  - first:
+      213: 21300074
+    second: orangetile_10
+  - first:
+      213: 21300076
+    second: orangetile_12
+  - first:
+      213: 21300078
+    second: orangetile_13
+  - first:
+      213: 21300080
+    second: lasertower_0
+  - first:
+      213: 21300082
+    second: lasertower_1
+  - first:
+      213: 21300084
+    second: lasertower_2
+  - first:
+      213: 21300086
+    second: lasertower_3
+  - first:
+      213: 21300088
+    second: lasertower_4
+  - first:
+      213: 21300090
+    second: deathbit_head
+  - first:
+      213: 21300092
+    second: deathbit_arm1
+  - first:
+      213: 21300094
+    second: deathbit_arm2
+  - first:
+      213: 21300096
+    second: deathbit_leg1
+  - first:
+      213: 21300098
+    second: deathbit_leg2
+  - first:
+      213: 21300100
+    second: yellowturret_left
+  - first:
+      213: 21300102
+    second: yellowturret_front
+  - first:
+      213: 21300104
+    second: yellowturret_right
+  - first:
+      213: 21300106
+    second: yellowturret_back
+  - first:
+      213: 21300108
+    second: rail_4cross
+  - first:
+      213: 21300110
+    second: rail_vertical
+  - first:
+      213: 21300112
+    second: rail_horizontal
+  - first:
+      213: 21300114
+    second: rail_turn_se
+  - first:
+      213: 21300116
+    second: rail_turn_sw
+  - first:
+      213: 21300118
+    second: rail_turn_nw
+  - first:
+      213: 21300120
+    second: rail_turn_ne
+  - first:
+      213: 21300122
+    second: rail_end_n
+  - first:
+      213: 21300124
+    second: rail_end_s
+  - first:
+      213: 21300126
+    second: rail_end_e
+  - first:
+      213: 21300128
+    second: rail_end_w
+  - first:
+      213: 21300130
+    second: rail_3cross_e
+  - first:
+      213: 21300132
+    second: rail_3cross_s
+  - first:
+      213: 21300134
+    second: rail_3cross_w
+  - first:
+      213: 21300136
+    second: rail_3cross_n
+  - first:
+      213: 21300138
+    second: orangetile_7a
+  - first:
+      213: 21300140
+    second: orangetile_7b
+  - first:
+      213: 21300142
+    second: orangetile_7c
+  - first:
+      213: 21300144
+    second: orangetile_7d
+  - first:
+      213: 21300146
+    second: orangetile_13a
+  - first:
+      213: 21300148
+    second: orangetile_13b
+  - first:
+      213: 21300150
+    second: orangetile_13c
+  - first:
+      213: 21300152
+    second: portal_blue0
+  - first:
+      213: 21300154
+    second: portal_orange0
+  - first:
+      213: 21300156
+    second: portal_blue1
+  - first:
+      213: 21300158
+    second: bombbot_medium
+  - first:
+      213: 21300160
+    second: bombbot_small
+  - first:
+      213: 21300162
+    second: bombbot_large
+  - first:
+      213: 21300164
+    second: purpleturret_left
+  - first:
+      213: 21300166
+    second: purpleturret_front
+  - first:
+      213: 21300168
+    second: purpleturret_right
+  - first:
+      213: 21300170
+    second: purpleturret_back
+  - first:
+      213: 21300172
+    second: lock_block
+  - first:
+      213: 21300174
+    second: key
+  - first:
+      213: 21300176
+    second: goal
+  - first:
+      213: 21300178
+    second: start
+  - first:
+      213: 21300180
+    second: lock_open0
+  - first:
+      213: 21300182
+    second: lock_open1
+  - first:
+      213: 21300184
+    second: lock_open2
+  - first:
+      213: 21300186
+    second: blob_shadow
+  - first:
+      213: 21300188
+    second: orangetile_7e
+  - first:
+      213: 21300190
+    second: orangetile_7f
+  - first:
+      213: 21300192
+    second: orangetile_7g
+  - first:
+      213: 21300194
+    second: orangetile_7h
+  - first:
+      213: 21300196
+    second: orangetile_13d
+  - first:
+      213: 21300198
+    second: orangetile_13e
+  - first:
+      213: 21300200
+    second: orangetile_13f
+  - first:
+      213: 21300202
+    second: orangetile_13g
+  - first:
+      213: 21300204
+    second: orangetile_13h
+  - first:
+      213: 21300206
+    second: scaffolding_0
+  - first:
+      213: 21300208
+    second: scaffolding_1
+  - first:
+      213: 21300210
+    second: scaffolding_2
+  - first:
+      213: 21300212
+    second: lamp_post
+  - first:
+      213: 21300214
+    second: lamp_halo
+  - first:
+      213: 21300216
+    second: scifi_box
+  - first:
+      213: 21300218
+    second: scifi_barrel
+  - first:
+      213: 21300220
+    second: scifi_panel
+  - first:
+      213: 21300222
+    second: scifi_panel_hologram
+  externalObjects: {}
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -124,6 +347,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -132,6 +357,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -139,10 +366,13 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
+    serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -151,33 +381,43 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -195,6 +435,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: player_idle_1
       rect:
@@ -209,6 +456,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: player_walk0
       rect:
@@ -223,6 +477,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: player_walk2
       rect:
@@ -237,6 +498,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: player_walk4
       rect:
@@ -251,6 +519,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_0
       rect:
@@ -265,6 +540,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_1
       rect:
@@ -279,6 +561,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_2
       rect:
@@ -293,6 +582,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_3
       rect:
@@ -307,6 +603,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_4
       rect:
@@ -321,6 +624,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_5
       rect:
@@ -335,6 +645,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_6
       rect:
@@ -349,6 +666,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7
       rect:
@@ -363,6 +687,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_8
       rect:
@@ -377,6 +708,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_11
       rect:
@@ -391,6 +729,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_9
       rect:
@@ -405,6 +750,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_10
       rect:
@@ -419,6 +771,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_12
       rect:
@@ -433,6 +792,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13
       rect:
@@ -447,6 +813,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lasertower_0
       rect:
@@ -461,6 +834,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lasertower_1
       rect:
@@ -475,6 +855,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lasertower_2
       rect:
@@ -489,6 +876,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lasertower_3
       rect:
@@ -503,6 +897,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 67305410000000000800000000000000
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lasertower_4
       rect:
@@ -517,6 +918,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: deathbit_head
       rect:
@@ -531,6 +939,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: deathbit_arm1
       rect:
@@ -545,6 +960,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: deathbit_arm2
       rect:
@@ -559,6 +981,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e7305410000000000800000000000000
+      internalID: 21300094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: deathbit_leg1
       rect:
@@ -573,6 +1002,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 08305410000000000800000000000000
+      internalID: 21300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: deathbit_leg2
       rect:
@@ -587,6 +1023,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: yellowturret_left
       rect:
@@ -601,6 +1044,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 48305410000000000800000000000000
+      internalID: 21300100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: yellowturret_front
       rect:
@@ -615,6 +1065,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 68305410000000000800000000000000
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: yellowturret_right
       rect:
@@ -629,6 +1086,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 88305410000000000800000000000000
+      internalID: 21300104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: yellowturret_back
       rect:
@@ -643,6 +1107,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a8305410000000000800000000000000
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_4cross
       rect:
@@ -657,6 +1128,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c8305410000000000800000000000000
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_vertical
       rect:
@@ -671,6 +1149,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_horizontal
       rect:
@@ -685,6 +1170,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_turn_se
       rect:
@@ -699,6 +1191,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29305410000000000800000000000000
+      internalID: 21300114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_turn_sw
       rect:
@@ -713,6 +1212,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 49305410000000000800000000000000
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_turn_nw
       rect:
@@ -727,6 +1233,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 69305410000000000800000000000000
+      internalID: 21300118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_turn_ne
       rect:
@@ -741,6 +1254,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 89305410000000000800000000000000
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_end_n
       rect:
@@ -755,6 +1275,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_end_s
       rect:
@@ -769,6 +1296,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9305410000000000800000000000000
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_end_e
       rect:
@@ -783,6 +1317,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e9305410000000000800000000000000
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_end_w
       rect:
@@ -797,6 +1338,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a305410000000000800000000000000
+      internalID: 21300128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_3cross_e
       rect:
@@ -811,6 +1359,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2a305410000000000800000000000000
+      internalID: 21300130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_3cross_s
       rect:
@@ -825,6 +1380,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a305410000000000800000000000000
+      internalID: 21300132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_3cross_w
       rect:
@@ -839,6 +1401,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6a305410000000000800000000000000
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: rail_3cross_n
       rect:
@@ -853,6 +1422,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8a305410000000000800000000000000
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7a
       rect:
@@ -867,6 +1443,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: aa305410000000000800000000000000
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7b
       rect:
@@ -881,6 +1464,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ca305410000000000800000000000000
+      internalID: 21300140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7c
       rect:
@@ -895,6 +1485,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ea305410000000000800000000000000
+      internalID: 21300142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7d
       rect:
@@ -909,6 +1506,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0b305410000000000800000000000000
+      internalID: 21300144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13a
       rect:
@@ -923,6 +1527,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b305410000000000800000000000000
+      internalID: 21300146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13b
       rect:
@@ -937,6 +1548,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4b305410000000000800000000000000
+      internalID: 21300148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13c
       rect:
@@ -951,6 +1569,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6b305410000000000800000000000000
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: portal_blue0
       rect:
@@ -965,6 +1590,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8b305410000000000800000000000000
+      internalID: 21300152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: portal_orange0
       rect:
@@ -979,6 +1611,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab305410000000000800000000000000
+      internalID: 21300154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: bombbot_medium
       rect:
@@ -993,6 +1632,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: eb305410000000000800000000000000
+      internalID: 21300158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: bombbot_small
       rect:
@@ -1007,6 +1653,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0c305410000000000800000000000000
+      internalID: 21300160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: bombbot_large
       rect:
@@ -1021,6 +1674,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2c305410000000000800000000000000
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: purpleturret_left
       rect:
@@ -1035,6 +1695,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4c305410000000000800000000000000
+      internalID: 21300164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: purpleturret_front
       rect:
@@ -1049,6 +1716,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6c305410000000000800000000000000
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: purpleturret_right
       rect:
@@ -1063,6 +1737,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8c305410000000000800000000000000
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: purpleturret_back
       rect:
@@ -1077,6 +1758,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ac305410000000000800000000000000
+      internalID: 21300170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lock_block
       rect:
@@ -1091,6 +1779,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cc305410000000000800000000000000
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: key
       rect:
@@ -1105,6 +1800,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ec305410000000000800000000000000
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: goal
       rect:
@@ -1119,6 +1821,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0d305410000000000800000000000000
+      internalID: 21300176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: start
       rect:
@@ -1133,6 +1842,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2d305410000000000800000000000000
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lock_open0
       rect:
@@ -1147,6 +1863,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4d305410000000000800000000000000
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lock_open1
       rect:
@@ -1161,6 +1884,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6d305410000000000800000000000000
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lock_open2
       rect:
@@ -1175,6 +1905,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8d305410000000000800000000000000
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: blob_shadow
       rect:
@@ -1189,6 +1926,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ad305410000000000800000000000000
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7e
       rect:
@@ -1203,6 +1947,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cd305410000000000800000000000000
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7f
       rect:
@@ -1217,6 +1968,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ed305410000000000800000000000000
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7g
       rect:
@@ -1231,6 +1989,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e305410000000000800000000000000
+      internalID: 21300192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_7h
       rect:
@@ -1245,6 +2010,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2e305410000000000800000000000000
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13d
       rect:
@@ -1259,6 +2031,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4e305410000000000800000000000000
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13e
       rect:
@@ -1273,6 +2052,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6e305410000000000800000000000000
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13f
       rect:
@@ -1287,6 +2073,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8e305410000000000800000000000000
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13g
       rect:
@@ -1301,6 +2094,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ae305410000000000800000000000000
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: orangetile_13h
       rect:
@@ -1315,6 +2115,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ce305410000000000800000000000000
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: scaffolding_0
       rect:
@@ -1329,6 +2136,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ee305410000000000800000000000000
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: scaffolding_1
       rect:
@@ -1343,6 +2157,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0f305410000000000800000000000000
+      internalID: 21300208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: scaffolding_2
       rect:
@@ -1357,6 +2178,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f305410000000000800000000000000
+      internalID: 21300210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lamp_post
       rect:
@@ -1371,6 +2199,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4f305410000000000800000000000000
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: lamp_halo
       rect:
@@ -1385,6 +2220,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6f305410000000000800000000000000
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: scifi_box
       rect:
@@ -1399,6 +2241,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 8f305410000000000800000000000000
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: scifi_barrel
       rect:
@@ -1413,6 +2262,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: af305410000000000800000000000000
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: scifi_panel
       rect:
@@ -1427,6 +2283,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cf305410000000000800000000000000
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: scifi_panel_hologram
       rect:
@@ -1441,9 +2304,26 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ef305410000000000800000000000000
+      internalID: 21300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
