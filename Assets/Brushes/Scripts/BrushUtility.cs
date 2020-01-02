@@ -102,12 +102,12 @@ public class BrushUtility
         return result;
     }
 
-    public static Transform GetPrefabRoot(Transform t)
+    public static GameObject GetPrefabRoot(Transform t)
     {
         #if UNITY_EDITOR
-            return PrefabUtility.FindPrefabRoot(t.gameObject).transform;
+            return PrefabUtility.GetOutermostPrefabInstanceRoot(t.gameObject);
         #else
-            return t;
+            return t.gameObject;
         #endif
     }
 }

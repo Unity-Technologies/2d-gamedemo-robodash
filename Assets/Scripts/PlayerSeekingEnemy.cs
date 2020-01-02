@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSeekingEnemy : MonoBehaviour {
-
-
+public class PlayerSeekingEnemy : MonoBehaviour
+{
     Transform target;
     Rigidbody2D rb;
 
@@ -26,8 +25,8 @@ public class PlayerSeekingEnemy : MonoBehaviour {
             var hero = FindObjectOfType<Hero>();
             if (hero != null) target = hero.transform;
         }
-        if (target == null) return;
 
+        if (target == null) return;
 
         if (!spawned) {
             float d = Vector3.Distance(transform.position, target.position);
@@ -55,12 +54,13 @@ public class PlayerSeekingEnemy : MonoBehaviour {
         }
     }
 
-    public void MinionGotHitBy(GameObject gameObject) {
+    public void MinionGotHitBy(GameObject go) {
         GetDestroyed();
     }
 
     public void GetDestroyed() {
-        animator.SetBool("alive", false);
+        if (animator != null)
+            animator.SetBool("alive", false);
         Destroy(gameObject, 2f);
         collided = true;
         if (audioSource != null) audioSource.Stop();

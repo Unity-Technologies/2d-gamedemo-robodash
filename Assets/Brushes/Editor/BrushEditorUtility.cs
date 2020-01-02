@@ -172,10 +172,10 @@ public class BrushEditorUtility
 
             PrefabUtility.InstantiatePrefab(rig);
             GameObject wallsGo = PrefabUtility.InstantiatePrefab(walls) as GameObject;
-            PrefabUtility.DisconnectPrefabInstance(wallsGo);
+            PrefabUtility.UnpackPrefabInstance(wallsGo, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
             wallsGo.transform.SetParent(grid.transform);
             GameObject floorGo = PrefabUtility.InstantiatePrefab(floor) as GameObject;
-            PrefabUtility.DisconnectPrefabInstance(floorGo);
+            PrefabUtility.UnpackPrefabInstance(floorGo, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
             floorGo.transform.SetParent(grid.transform);
             PrefabUtility.InstantiatePrefab(gameState);
             PrefabUtility.InstantiatePrefab(swarmSpawner);
