@@ -1,4 +1,5 @@
 using UnityEditor;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 [CustomEditor(typeof(LayerObjectBrush<>))]

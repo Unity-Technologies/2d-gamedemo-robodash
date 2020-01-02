@@ -1,5 +1,5 @@
 #if UNITY_EDITOR
-using UnityEditor;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 [CustomGridBrush(true, true, true, "Default Brush")]
