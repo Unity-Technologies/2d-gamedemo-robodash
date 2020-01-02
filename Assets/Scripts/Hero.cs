@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 
 public class Hero : MonoBehaviour
 {
-	public float m_MoveSpeed;
+    public float m_MoveSpeed;
 
 
     public Animator animator;
@@ -20,35 +20,35 @@ public class Hero : MonoBehaviour
 
     public GameObject deathBits;
     public Vector2 lookFacing;
-	public Vector2 respawnPoint;
+    public Vector2 respawnPoint;
     AudioSource audioSource;
     float dashCooldown = 0f;
     public bool dead = false;
 
-	void Start() {
+    void Start() {
         rb = GetComponent<Rigidbody2D>();
         animator.SetBool("alive", true);
         dashParticleSystem.transform.SetParent(null);
         audioSource = GetComponent<AudioSource>();
-		GameObject.FindObjectOfType<SwarmSpawner>().Restart();
+        GameObject.FindObjectOfType<SwarmSpawner>().Restart();
     }
-	void Update () 
-	{
+    void Update () 
+    {
         if(playerState == PlayerState.Dead) {
             rb.velocity = Vector2.zero;
             return;
         }
 
-		Vector3 tryMove = Vector3.zero;
-		
-		if (Input.GetKey(KeyCode.LeftArrow))
-			tryMove += Vector3Int.left;
-		if (Input.GetKey(KeyCode.RightArrow))
-			tryMove += Vector3Int.right;
-		if (Input.GetKey(KeyCode.UpArrow))
-			tryMove += Vector3Int.up;
-		if (Input.GetKey(KeyCode.DownArrow))
-			tryMove += Vector3Int.down;
+        Vector3 tryMove = Vector3.zero;
+        
+        if (Input.GetKey(KeyCode.LeftArrow))
+            tryMove += Vector3Int.left;
+        if (Input.GetKey(KeyCode.RightArrow))
+            tryMove += Vector3Int.right;
+        if (Input.GetKey(KeyCode.UpArrow))
+            tryMove += Vector3Int.up;
+        if (Input.GetKey(KeyCode.DownArrow))
+            tryMove += Vector3Int.down;
 
         rb.velocity = Vector3.ClampMagnitude(tryMove, 1f) * m_MoveSpeed;
         animator.SetBool("moving", tryMove.magnitude > 0);
@@ -99,7 +99,7 @@ public class Hero : MonoBehaviour
 
         animator.SetBool("dash_ready", dashCooldown <= 0f);
 
-	}
+    }
 
     public void PlayerGotHitBy(GameObject gameObject) {
         KillPlayer();

@@ -12,7 +12,7 @@ public class AudioSourcePanner : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
         maxVolume = audioSource.volume;
     }
-	void Update() {
+    void Update() {
         Vector3 viewport = Camera.main.WorldToViewportPoint(transform.position);
         float distanceFromCenter = Mathf.InverseLerp(.75f, .25f, Vector2.Distance(viewport, new Vector2(.5f, .5f)));
 

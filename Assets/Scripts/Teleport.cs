@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-	public Teleport m_Target;
+    public Teleport m_Target;
 
     Rigidbody2D justArrived = null;
     AudioSource audioSource;
@@ -21,10 +21,10 @@ public class Teleport : MonoBehaviour
         
     }
 
-	void OnTriggerExit2D(Collider2D other)
-	{
-		justArrived = null;
-	}
+    void OnTriggerExit2D(Collider2D other)
+    {
+        justArrived = null;
+    }
 
     void TeleportObject(Rigidbody2D obj) {
         m_Target.ReceiveObject(obj);

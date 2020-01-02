@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-	public Doorkey m_Key;
+    public Doorkey m_Key;
 
     public Collider2D blocker;
     public Animator animator;

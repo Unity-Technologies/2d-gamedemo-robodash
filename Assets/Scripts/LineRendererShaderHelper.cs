@@ -10,7 +10,7 @@ public class LineRendererShaderHelper : MonoBehaviour {
 
     LineRenderer lr;
     MaterialPropertyBlock block;
-	void Update() {
+    void Update() {
         if (lr == null) lr = GetComponent<LineRenderer>();
         if (block == null) { block = new MaterialPropertyBlock(); lr.GetPropertyBlock(block); }
 
