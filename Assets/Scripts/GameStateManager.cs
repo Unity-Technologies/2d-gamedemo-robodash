@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameStateManager : MonoBehaviour {
 
     public GameObject playerPrefab;
-	public Vector2 playerRespawnPoint;
+    public Vector2 playerRespawnPoint;
 
     float levelStartedAt;
 

@@ -8,7 +8,7 @@ public class AspectRatioRectTransform : MonoBehaviour {
 
     RectTransform rectTransform;
     AspectRatioFitter aspectRatioFitter;
-	void Update() {
+    void Update() {
         if (rectTransform == null) rectTransform = GetComponent<RectTransform>();
         if (aspectRatioFitter == null) aspectRatioFitter = GetComponent<AspectRatioFitter>();
 

@@ -6,5 +6,5 @@ using UnityEngine;
 [CustomEditor(typeof(WallTile))]
 public class WallTileEditor : Editor 
 {
-	// Nothing yet
+    // Nothing yet
 }

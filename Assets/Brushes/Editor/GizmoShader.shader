@@ -10,10 +10,10 @@ Shader "Unlit/GizmoShader"
     {
         Pass
         {
-			Tags { "RenderType" = "Transparent" "Queue" = "Transparent" }
-			Blend SrcAlpha OneMinusSrcAlpha
+            Tags { "RenderType" = "Transparent" "Queue" = "Transparent" }
+            Blend SrcAlpha OneMinusSrcAlpha
             
-			CGPROGRAM
+            CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
             

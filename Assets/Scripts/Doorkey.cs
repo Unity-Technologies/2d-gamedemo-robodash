@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Doorkey : MonoBehaviour
 {
-	public Door m_Door;
+    public Door m_Door;
     public SpriteRenderer mainSprite;
     public Light pointLight;
     MaterialPropertyBlock rendererPropertyBlock;
@@ -50,11 +50,11 @@ public class Doorkey : MonoBehaviour
         mainSprite.SetPropertyBlock(rendererPropertyBlock);
         if (pointLight != null) pointLight.color = color;
 
-	    if (openingParticleSystem != null)
-	    {
-		    var main = openingParticleSystem.main;
-		    main.startColor = color;
-	    }
+        if (openingParticleSystem != null)
+        {
+            var main = openingParticleSystem.main;
+            main.startColor = color;
+        }
     }
 
 }

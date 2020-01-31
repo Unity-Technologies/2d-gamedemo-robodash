@@ -11,10 +11,10 @@ public class UIAnimation : MonoBehaviour {
     enum UIState { Start, Game, GameOver }
     UIState uiState = UIState.Start;
 
-	void Start () {
+    void Start () {
         animator = GetComponent<Animator>();
-	}
-	
+    }
+    
     void Update() {
 
         if (uiState != UIState.Game) {
@@ -31,7 +31,7 @@ public class UIAnimation : MonoBehaviour {
         }
         
     }
-	
+    
     public void LevelDone(float timeInSeconds) {
 
         System.TimeSpan ts = new System.TimeSpan(0, 0, 0, 0, Mathf.RoundToInt(timeInSeconds * 1000f));
