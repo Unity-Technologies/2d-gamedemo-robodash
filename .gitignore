@@ -33,3 +33,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# This repo specifically, autogen files
+MonoBleedingEdge/*
+TilemapGDC_Data/*
+TilemapGDC.exe
+UnityCrashHandler64.exe
+UnityPlayer.dll
