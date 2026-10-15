@@ -8,7 +8,7 @@ public class SwarmSpawner : MonoBehaviour {
     public List<GameObject> swarmPrefabs; //in order of size
     public void Restart()
     {
-        GridInformation gi = FindObjectOfType<GridInformation>();
+        GridInformation gi = FindAnyObjectByType<GridInformation>();
         Grid g = BrushUtility.GetRootGrid(false);
 
         if (g == null || gi == null) return;

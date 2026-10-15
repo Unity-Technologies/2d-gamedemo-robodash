@@ -23,7 +23,7 @@ public class UIAnimation : MonoBehaviour {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 } else {
                     uiState = UIState.Game;
-                    FindObjectOfType<GameStateManager>().StartGame();
+                    FindAnyObjectByType<GameStateManager>().StartGame();
                     animator.SetTrigger("start_game");
                 }
             }

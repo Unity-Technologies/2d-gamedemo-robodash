@@ -24,7 +24,7 @@ public class LayerObjectBrushEditor<T> : GridBrushEditorBase
     {
         get
         {
-            Grid grid = FindObjectOfType<Grid>();
+            Grid grid = FindAnyObjectByType<Grid>();
             return grid != null ? new GameObject[] { grid.gameObject } : null;
         }
     }

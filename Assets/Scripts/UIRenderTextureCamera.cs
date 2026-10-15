@@ -24,8 +24,8 @@ public class UIRenderTextureCamera : MonoBehaviour {
     public void UpdateCamera() {
         if (cam == null) cam = GetComponent<Camera>();
         if (mainCam == null) mainCam = GetComponentInParent<Camera>();
-        if (compositor == null) compositor = FindObjectOfType<RenderTextureCompositor>();
-        if (renderTextureCamera == null) renderTextureCamera = FindObjectOfType<RenderTextureCamera>();
+        if (compositor == null) compositor = FindAnyObjectByType<RenderTextureCompositor>();
+        if (renderTextureCamera == null) renderTextureCamera = FindAnyObjectByType<RenderTextureCamera>();
         if (cam == null || mainCam == null || compositor == null || renderTextureCamera == null) return;
 
         targetWidth = renderTextureCamera.GetCurrentTargetWidth();

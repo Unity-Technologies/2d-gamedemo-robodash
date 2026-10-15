@@ -10,7 +10,7 @@ public class LevelGoal : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
     }
     void OnTriggerEnter2D(Collider2D other) {
-        FindObjectOfType<GameStateManager>().GoalReached(this);
+        FindAnyObjectByType<GameStateManager>().GoalReached(this);
         if (audioSource != null) audioSource.Play();
         victoryParticleSystem.Play();
     }

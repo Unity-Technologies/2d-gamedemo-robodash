@@ -22,7 +22,7 @@ public class GameStateManager : MonoBehaviour {
     }
 
     void MakePlayer() {
-        var startPoint = FindObjectOfType<LevelStart>();
+        var startPoint = FindAnyObjectByType<LevelStart>();
         if (startPoint != null) {
             playerRespawnPoint = startPoint.transform.position;
             startPoint.LevelStarted();
@@ -40,7 +40,7 @@ public class GameStateManager : MonoBehaviour {
         if (gameState != GameState.Playing) return;
         gameState = GameState.Done;
         float totalTime = Time.time - levelStartedAt;
-        FindObjectOfType<UIAnimation>().LevelDone(totalTime);
-        FindObjectOfType<Hero>().LevelComplete();
+        FindAnyObjectByType<UIAnimation>().LevelDone(totalTime);
+        FindAnyObjectByType<Hero>().LevelComplete();
     }
 }

@@ -30,12 +30,12 @@ public class Hero : MonoBehaviour
         animator.SetBool("alive", true);
         dashParticleSystem.transform.SetParent(null);
         audioSource = GetComponent<AudioSource>();
-        GameObject.FindObjectOfType<SwarmSpawner>().Restart();
+        GameObject.FindAnyObjectByType<SwarmSpawner>().Restart();
     }
     void Update () 
     {
         if(playerState == PlayerState.Dead) {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -50,7 +50,7 @@ public class Hero : MonoBehaviour
         if (Input.GetKey(KeyCode.DownArrow))
             tryMove += Vector3Int.down;
 
-        rb.velocity = Vector3.ClampMagnitude(tryMove, 1f) * m_MoveSpeed;
+        rb.linearVelocity = Vector3.ClampMagnitude(tryMove, 1f) * m_MoveSpeed;
         animator.SetBool("moving", tryMove.magnitude > 0);
         if (Mathf.Abs(tryMove.x) > 0) {
             animator.transform.localScale = tryMove.x < 0f ? new Vector3(-1f, 1f, 1f) : new Vector3(1f, 1f, 1f);
@@ -116,7 +116,7 @@ public class Hero : MonoBehaviour
         animator.SetBool("alive", false);
         deathBits.transform.SetParent(null);
         Destroy(gameObject, 1f);
-        GameObject.FindObjectOfType<GameStateManager>().PlayerDied();
+        GameObject.FindAnyObjectByType<GameStateManager>().PlayerDied();
         dead = true;
     }
 

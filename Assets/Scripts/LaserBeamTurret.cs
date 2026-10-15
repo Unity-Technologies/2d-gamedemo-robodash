@@ -101,7 +101,7 @@ public class LaserBeamTurret : MonoBehaviour {
 
     public LaserBeamTurret GetPrevious()
     {
-        LaserBeamTurret[] all = FindObjectsOfType<LaserBeamTurret>();
+        LaserBeamTurret[] all = FindObjectsByType<LaserBeamTurret>();
         foreach (var other in all)
         {
             if (other.nextTurret == this)

@@ -13,7 +13,7 @@ public class TintBrush : GridBrushBase
     public override void Paint(GridLayout grid, GameObject layer, Vector3Int position)
     {
         GridInformation info = BrushUtility.GetRootGridInformation(true);
-        Color oldColor = info.GetPositionProperty(position, k_TintColorPropertyName, FindObjectOfType<TintTextureGenerator>().defaultColor);
+        Color oldColor = info.GetPositionProperty(position, k_TintColorPropertyName, FindAnyObjectByType<TintTextureGenerator>().defaultColor);
         info.ErasePositionProperty(position, k_TintColorPropertyName);
         Color newColor = oldColor * (1 - m_Blend) + m_Color * m_Blend;
         info.SetPositionProperty(position, k_TintColorPropertyName, newColor);
@@ -24,13 +24,13 @@ public class TintBrush : GridBrushBase
     {
         GridInformation info = BrushUtility.GetRootGridInformation(true);
         info.ErasePositionProperty(position, k_TintColorPropertyName);
-        if (generator == null) generator = FindObjectOfType<TintTextureGenerator>();
+        if (generator == null) generator = FindAnyObjectByType<TintTextureGenerator>();
         TintTextureGenerator.RefreshTintmap(position);
     }
 
     public override void Pick(GridLayout grid, GameObject layer, BoundsInt position, Vector3Int pivot)
     {
         GridInformation info = BrushUtility.GetRootGridInformation(true);
-        m_Color = info.GetPositionProperty(position.min, k_TintColorPropertyName, FindObjectOfType<TintTextureGenerator>().defaultColor);
+        m_Color = info.GetPositionProperty(position.min, k_TintColorPropertyName, FindAnyObjectByType<TintTextureGenerator>().defaultColor);
     }
 }

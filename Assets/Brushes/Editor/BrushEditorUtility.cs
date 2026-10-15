@@ -164,7 +164,7 @@ public class BrushEditorUtility
         if (rig != null && walls != null && floor != null && hero != null && gameState != null && canvas != null && start != null && goal != null && swarmSpawner != null)
         {
             RenderSettings.ambientLight = Color.white;
-            foreach (var cam in Object.FindObjectsOfType<Camera>())
+            foreach (var cam in Object.FindObjectsByType<Camera>())
             {
                 Object.DestroyImmediate(cam.gameObject, false);
             }

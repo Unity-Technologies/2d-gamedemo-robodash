@@ -177,21 +177,21 @@ public class TintTextureGenerator : MonoBehaviour
 
     public static void RefreshTintmap()
     {
-        TintTextureGenerator instance = FindObjectOfType<TintTextureGenerator>();
+        TintTextureGenerator instance = FindAnyObjectByType<TintTextureGenerator>();
         if(instance != null)
             instance.Refresh();
     }
 
     public static void RefreshTintmap(Vector3Int position)
     {
-        TintTextureGenerator instance = FindObjectOfType<TintTextureGenerator>();
+        TintTextureGenerator instance = FindAnyObjectByType<TintTextureGenerator>();
         if (instance != null)
             instance.Refresh(new BoundsInt(position, Vector3Int.one));
     }
 
     public static void RefreshTintmap(BoundsInt position)
     {
-        TintTextureGenerator instance = FindObjectOfType<TintTextureGenerator>();
+        TintTextureGenerator instance = FindAnyObjectByType<TintTextureGenerator>();
         if (instance != null)
             instance.Refresh(position);
     }

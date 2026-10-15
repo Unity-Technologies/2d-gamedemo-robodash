@@ -18,12 +18,12 @@ public class Bullet : MonoBehaviour {
     }
     public void SetTarget(Transform target) {
         this.target = target;
-        rb.velocity = (target.position - transform.position).normalized * speed;
+        rb.linearVelocity = (target.position - transform.position).normalized * speed;
     }
 
     public void SetTarget(Vector3 targetPosition) {
         this.targetPosition = targetPosition;
-        rb.velocity = (targetPosition - transform.position).normalized * speed;
+        rb.linearVelocity = (targetPosition - transform.position).normalized * speed;
     }
 
 
@@ -43,7 +43,7 @@ public class Bullet : MonoBehaviour {
         collided = true;
 
         Destroy(gameObject, 1f);
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         if (animator != null) animator.SetTrigger("destroy");
         if (audioSource != null) audioSource.PlayOneShot(collisionAudioClips[Random.Range(0, collisionAudioClips.Count)]);
     }

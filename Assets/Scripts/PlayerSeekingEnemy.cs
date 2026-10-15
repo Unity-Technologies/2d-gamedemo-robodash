@@ -22,7 +22,7 @@ public class PlayerSeekingEnemy : MonoBehaviour
     }
     void Update() {
         if (target == null) {
-            var hero = FindObjectOfType<Hero>();
+            var hero = FindAnyObjectByType<Hero>();
             if (hero != null) target = hero.transform;
         }
 
@@ -38,8 +38,8 @@ public class PlayerSeekingEnemy : MonoBehaviour
         } else {
            
             Vector2 delta = (target.position - transform.position).normalized;
-            rb.velocity = delta * speed;
-            animator.transform.localScale = rb.velocity.x < 0f ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
+            rb.linearVelocity = delta * speed;
+            animator.transform.localScale = rb.linearVelocity.x < 0f ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
             
         }
 

@@ -7,7 +7,7 @@ public class CameraController : MonoBehaviour {
     Hero currentHero;
     public Camera cam;
     void FindHero() {
-        var heroes = FindObjectsOfType<Hero>();
+        var heroes = FindObjectsByType<Hero>();
         foreach(var h in heroes) {
             if (!h.dead) currentHero = h;
         }

@@ -71,7 +71,7 @@ public class BulletTurret : MonoBehaviour {
             switch (fireTarget)
             {
                 case FireTarget.Player:
-                    var hero = FindObjectOfType<Hero>();
+                    var hero = FindAnyObjectByType<Hero>();
                     if (hero != null) target = hero.transform;
                     break;
             }

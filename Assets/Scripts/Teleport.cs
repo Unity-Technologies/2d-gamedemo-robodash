@@ -32,7 +32,7 @@ public class Teleport : MonoBehaviour
     }
 
     void ReceiveObject(Rigidbody2D obj) {
-        Vector2 vel = obj.velocity;
+        Vector2 vel = obj.linearVelocity;
         obj.MovePosition(transform.position);
         justArrived = obj;
     }
