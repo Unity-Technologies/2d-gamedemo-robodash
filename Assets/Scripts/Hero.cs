@@ -39,16 +39,7 @@ public class Hero : MonoBehaviour
             return;
         }
 
-        Vector3 tryMove = Vector3.zero;
-        
-        if (Input.GetKey(KeyCode.LeftArrow))
-            tryMove += Vector3Int.left;
-        if (Input.GetKey(KeyCode.RightArrow))
-            tryMove += Vector3Int.right;
-        if (Input.GetKey(KeyCode.UpArrow))
-            tryMove += Vector3Int.up;
-        if (Input.GetKey(KeyCode.DownArrow))
-            tryMove += Vector3Int.down;
+        Vector3 tryMove = GameInput.Move.ReadValue<Vector2>();
 
         rb.linearVelocity = Vector3.ClampMagnitude(tryMove, 1f) * m_MoveSpeed;
         animator.SetBool("moving", tryMove.magnitude > 0);
@@ -61,7 +52,7 @@ public class Hero : MonoBehaviour
 
         dashCooldown = Mathf.MoveTowards(dashCooldown, 0f, Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump")) {
+        if (GameInput.Dash.WasPressedThisFrame()) {
             if(dashCooldown <= 0f && tryMove.magnitude > 0) {
 
                 var hit = Physics2D.Raycast(transform.position + Vector3.up * .5f, tryMove.normalized, 3.5f, 1 << LayerMask.NameToLayer("Wall"));

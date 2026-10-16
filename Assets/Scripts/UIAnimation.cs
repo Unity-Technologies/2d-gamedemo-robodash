@@ -18,7 +18,7 @@ public class UIAnimation : MonoBehaviour {
     void Update() {
 
         if (uiState != UIState.Game) {
-            if (Input.GetButton("Jump")) {
+            if (GameInput.Dash.IsPressed()) {
                 if (uiState == UIState.GameOver) {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 } else {
