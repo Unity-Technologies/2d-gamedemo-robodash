@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.Tilemaps;
 
 #if UNITY_EDITOR
@@ -163,10 +164,23 @@ public class BrushEditorUtility
 
         if (rig != null && walls != null && floor != null && hero != null && gameState != null && canvas != null && start != null && goal != null && swarmSpawner != null)
         {
-            RenderSettings.ambientLight = Color.white;
             foreach (var cam in Object.FindObjectsByType<Camera>())
             {
                 Object.DestroyImmediate(cam.gameObject, false);
+            }
+            bool hasGlobalLight = false;
+            foreach (var light in Object.FindObjectsByType<Light2D>())
+            {
+                if (light.lightType == Light2D.LightType.Global)
+                    hasGlobalLight = true;
+            }
+            if (!hasGlobalLight)
+            {
+                // Ambient light, kept on its own blend style so NormalMappedSprite does not quantize it
+                Light2D ambient = new GameObject("Global Light 2D").AddComponent<Light2D>();
+                ambient.lightType = Light2D.LightType.Global;
+                ambient.blendStyleIndex = 1;
+                ambient.color = Color.white;
             }
             Grid grid = BrushUtility.GetRootGrid(true);
 

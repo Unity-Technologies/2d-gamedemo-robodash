@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace UnityEngine.Tilemaps
 {
@@ -350,7 +349,13 @@ namespace UnityEngine.Tilemaps
 
         public Vector3Int[] GetAllPositions(string propertyName)
         {
-            return m_PositionProperties.Keys.ToList().FindAll(x => x.name == propertyName).Select(x => x.position).ToArray();
+            List<Vector3Int> positions = new List<Vector3Int>();
+            foreach (var key in m_PositionProperties.Keys)
+            {
+                if (key.name == propertyName)
+                    positions.Add(key.position);
+            }
+            return positions.ToArray();
         }
     }
 }

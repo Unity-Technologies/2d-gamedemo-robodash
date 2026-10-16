@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
-using System.Linq;
 
 [CreateAssetMenu]
 public class RandomTile : TileBase {
@@ -15,7 +14,9 @@ public class RandomTile : TileBase {
         tileData.colliderType = Tile.ColliderType.Grid;
 
         Random.InitState(position.GetHashCode());
-        int total = sprites.Sum(x => x.probability);
+        int total = 0;
+        foreach (var s in sprites)
+            total += s.probability;
 
         int[] indices = new int[total];
         int spriteIndex = 0;

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Door : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Door : MonoBehaviour
     public Animator animator;
 
     public SpriteRenderer mainSprite;
-    public Light pointLight;
+    public Light2D pointLight;
 
     MaterialPropertyBlock rendererPropertyBlock;
     public Color color;

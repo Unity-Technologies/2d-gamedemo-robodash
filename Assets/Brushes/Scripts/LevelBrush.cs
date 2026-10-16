@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -173,8 +172,13 @@ public class LevelBrush : GridBrushBase
     {
         if (!s_LevelBoundsCache.HasValue)
         {
-            Vector3Int min = new Vector3Int(s_LevelCache.Min(p => p.x), s_LevelCache.Min(p => p.y), 0);
-            Vector3Int max = new Vector3Int(s_LevelCache.Max(p => p.x) + 1, s_LevelCache.Max(p => p.y) + 1, 1);
+            Vector3Int min = new Vector3Int(int.MaxValue, int.MaxValue, 0);
+            Vector3Int max = new Vector3Int(int.MinValue, int.MinValue, 1);
+            foreach (var p in s_LevelCache)
+            {
+                min = new Vector3Int(Mathf.Min(min.x, p.x), Mathf.Min(min.y, p.y), 0);
+                max = new Vector3Int(Mathf.Max(max.x, p.x + 1), Mathf.Max(max.y, p.y + 1), 1);
+            }
             s_LevelBoundsCache = new BoundsInt(min, max - min);
         }
         return s_LevelBoundsCache.Value;

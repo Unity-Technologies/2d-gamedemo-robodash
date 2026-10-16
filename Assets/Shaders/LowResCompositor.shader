@@ -1,60 +1,40 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
 Shader "Hidden/LowResCompositor"
 {
-    Properties
-    {
-        _LowResTexture ("Texture", 2D) = "white" {}
-        _UITexture("UI Texture", 2D) = "clear" {}
-    }
     SubShader
     {
+        Tags { "RenderPipeline" = "UniversalPipeline" }
+
         // No culling or depth
         Cull Off ZWrite Off ZTest Always
 
         Pass
         {
-            CGPROGRAM
-            #pragma vertex vert
+            Name "LowResCompositor"
+
+            HLSLPROGRAM
+            #pragma vertex Vert
             #pragma fragment frag
-            
-            #include "UnityCG.cginc"
 
-            struct appdata
-            {
-                float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
-            };
+            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+            #include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
 
-            struct v2f
-            {
-                float2 uv : TEXCOORD0;
-                float4 vertex : SV_POSITION;
-            };
+            // Set globally by RenderTextureCompositor
+            TEXTURE2D(_LowResTexture);
+            TEXTURE2D(_UITexture);
 
-            v2f vert (appdata v)
-            {
-                v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = v.uv;
-                return o;
-            }
-            
-            sampler2D _LowResTexture;
-            sampler2D _UITexture;
-
-            fixed4 frag (v2f i) : SV_Target
+            half4 frag (Varyings i) : SV_Target
             {
                 //calculate proper uv coordinates of the pixel perfect low res texture & add ui texture on top
+                float2 uv = i.texcoord;
                 float aspect = _ScreenParams.x / _ScreenParams.y;
-                i.uv.y = ((i.uv.y * 2.0 - 1.0) / aspect) / 2.0 + .5;
+                uv.y = ((uv.y * 2.0 - 1.0) / aspect) / 2.0 + .5;
 
-                fixed4 col = tex2D(_LowResTexture, i.uv);
-                fixed4 ui = tex2D(_UITexture, i.uv);
-                
-                return fixed4(col.rgb * (1-ui.a) + ui.rgb * ui.a, 1);
+                half4 col = SAMPLE_TEXTURE2D(_LowResTexture, sampler_PointClamp, uv);
+                half4 ui = SAMPLE_TEXTURE2D(_UITexture, sampler_PointClamp, uv);
+
+                return half4(col.rgb * (1-ui.a) + ui.rgb * ui.a, 1);
             }
-            ENDCG
+            ENDHLSL
         }
     }
 }

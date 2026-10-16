@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections.Generic;
-using System.Linq;
 
 [CreateAssetMenu]
 public class WallTile : TileBase
@@ -58,7 +57,9 @@ public class WallTile : TileBase
         if (slot.sprites.Count > 0)
         {
             Random.InitState(position.GetHashCode());
-            int total = slot.sprites.Sum(x => x.probability);
+            int total = 0;
+            foreach (var s in slot.sprites)
+                total += s.probability;
            
             int[] indices = new int[total];
             int spriteIndex = 0;

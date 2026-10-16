@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Doorkey : MonoBehaviour
 {
     public Door m_Door;
     public SpriteRenderer mainSprite;
-    public Light pointLight;
+    public Light2D pointLight;
     MaterialPropertyBlock rendererPropertyBlock;
     public Color color;
     public ParticleSystem openingParticleSystem;
